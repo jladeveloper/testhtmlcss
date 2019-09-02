@@ -1,60 +1,94 @@
-<!DOCTYPE html>
+<!DOCTYPE html/>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>home</title>
-    <link rel="stylesheet" href="css/estilo.css"/>
-
+    <meta charset="UTF-8"/>
+    <title>GOOGLE GLASS</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
 </head>
 <body>
-<div>
-<header class="cabeçalho">
-    <h1><a href="index.html">J'Alievi Dev</a></br><a href="https://whats.link/jaison" target="_blank">Learn Always</a></h1>
-</header>
-<nav class="menuprincipal">
+<div id="interface">
+<header id="cabeçalho">
+<hgroup>
+<h1>Google Glass</h1>
+<h2>A revolução do Google está chegando</h2>
+</hgroup>
+<figure>
+<img id="icone" src="_imagens/glass-oculos-preto-med.png" alt="none">
+</figure>
+<nav id="menu">
+    <!--<h1>Menu Principal</h1>-->
     <ul>
-        <li><a href="assunto-01.html">HTML</a></li>
-        <li><a href="assunto-02.html">CSS</a></li>
-        <li><a href="assunto-03.html">Javascript</a></li>
-        <li><a href="my-life.html">Meu Progresso</a></li>
-        <li><a href="contats.html">Contato</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="specs.html">Especificações</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="multimidia.html">Multimídia</a></li>
+        <li><a href="fale-conosco.html"> Fale conosco</a></li>
     </ul>
-</nav>
-<main>
-<article class="apresentação">
-    <h1>Apresentação</h1>
-    <p>Meu nome é Jaison Alievi, tenho 25, sou DEV iniciante e tenho como objetivo ser front-end, vou apresentar neste site como foi meu inicio e quero tirar todas as suas dúvidas a respeito desta área da tecnologia que tem muitas oportunidades...</p>
+    </nav>
 
-    <figure>
-        <img src="imagens/imagem-centro-site.jpg">
-            <figcaption>
-                <h2>Programador...</h2>
-                <p>Seja bem vindo!</p>
-            </figcaption>
-    </figure>
+</header>
+<section id="corpo">
+<article id="noticia-principal">
+<header id=cabeçalho-artigo>
+<hgroup>
+<h3>Tecnologia > Inovações</h3>
+<h1>Saiba tudo sobre o Google Glass</h1>
+<h2>por J'Aliev dev</h2>
+<h3 class="direita">Atualizado em 30/agosto/2019</h3>
+</hgroup>
+</header>
+    <h2>O que é</h2>
+
+    <p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a>Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+
+<figure class="legenda-imagem">
+    <img src="_imagens/glass-quadro-homem-mulher.jpg" alt="none">
+    <figcaption>
+    <h1>Google Glass</h1>
+    <p>bem VINUS NESSE OCRO</p>
+</figcaption>
+</figure>
+
+    <h2>Data de lançamento</h2>
+    <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+
+<h2>Especificações Técnicas</h2>
+<table id="tabelaspec"><!--semantica de tabela-->
+<caption>Tabela Técnica do Google Glass <span class="datatab">SET/2019</span></caption>
+    <tr><td class="ce"> Tela </td><td class="cd"> Resolução equivalente a tela de 25" </td></tr>
+    <tr><td rowspan="2" class="ce"> Camera </td class="cd"> <td class="cd"> 5MP para fotos </td></tr>
+    <tr><td class="cd">720p para vídeos</td class="cd"></tr>
+    <tr><td rowspan="2" class="ce"> Conectividade </td> <td class="cd"> Wi-Fi </td></tr>
+    <tr><td class="cd">Bluetooth </td></tr>
+    <tr><td class="ce"> Memória Interna </td> <td class="cd"> 12GB </td> </tr>
+</table>
+
+    <h2>Como funciona</h2>
+    <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+
+    <h2>O que você pode fazer com o Google Glasses</h2>
+    <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+
+[AQUI ENTRA UM VÍDEO]
 </article>
-<section class="objetivo">
-    <h1>Objetivo</h1>
-    <p>A intenção desta pagina WEB é tirar todas as dúvidas dos iniciantes na área de Programação, dando um caminho para iniciar e conseguir inserir-se ao mercado de trabalho! da forma mais rápida possível!</p>
 </section>
-<section class="porondecomeçar">
-    <h2>Por Onde Começar?</h2>
-    <p><q>[Vou contar como começei...]</q></p>
-    <p>Como muitos de vocês acredito eu, decidiram largar o emprego atual por ouvir falar que a área de tecnologia é o futuro ou tem muitas vagas, realmente essas informações estão corretas! mais antes de mergulhar nesta onda você deve analisar; nada na vida é  fácil, por isso desde ja quero abrir sua mente! Eu trabalhava em um Condominio como porteiro e estava cansado já, 4 anos acomodado e vendo minha vida passar, então decidi dar um basta entreguei meus caminhos na mão de Deus e para minha surpresa fui demitido nos meses decorrentes neste meio tempo tinha eu iniciado minha primeira graduação aos 24 anos escolhi a faculdade <a class="facul" href="https://www.uninter.com/graduacao-ead/curso-analise-e-desenvolvimento-de-sistemas/" target="_blank">Analise e Desenvolvimento de Sistemas EAD</a>, uma das que mais tem relação com programação! Quero aqui Deixar claro que Faculdade não forma programadores, assim como medicina não forma médicos, A prática é que faz você fazer acontecer!.</p>
-    <h2>Eu devo ou não fazer Faculdade?</h2>
-    <p>A Príncipio eu recomendo que sim! Afinal todo o conhecimento é válido, e o diploma fará você se sentir <q>auto confiante</q> porém, se você não tem muito tempo é melhor continuar neste site que irei te dar um caminho para você iniciar hoje mesmo!</p>
-    <h2>Começando</h2>
-    <p><q>Como foi meu começo...</q>Voce talvez irá se identificar rsrs, eu comecei indo ao youtube pesquisar o que faz um programador, e olha o programador cria coisas que voce nem imagina, se for citar tudo esta pagina é pequena, na verdade devo atualiza-lo <q>Programador</q> é um termo ultrapassado hoje voce pode se chamar de Desenvolvedor iniciante ou até DEV...enfim tudo uma maravilha no começo, mais lembra que citei da parte que nada na vida é fácil então ela veio rápido, este balde de água fria caiu na minha cabeça e te digo foi muito bom ter acontecido, agora compartilho com você meu caro amigo o que pude aprender com isso.<br>No youtube tem muitos canais otimos, porém a grande maioria é de profissionais de nível avançado(fullstack), e eles não irão te ensinar como começar, eles vão instruir aqueles que estão no mesmo nível, aqui  esta o momento que muitos desistem desta carreira e eu também estive ao ponto de desistir pois pensava que aquilo não era pra mim. então o Deus que eu sirvo iluminou minha mente e resumidamente eu mudei minha forma de pensar.<q>Todos estes que são especialistas um dia foram como eu e você então se eles conseguiram eu também consigo! eles falam sobre diversas tecnologias que irão ser aquelas que vão alavancar e tudo mais e então os iniciantes vão e tentam aprender e acabam que não aprende nada nem o inicio e ae nasce a frustração e consequentemente a desistência!</q> Sei agora que você não ira desistir e eu quero te ajudar a evoluir vamos juntos!</p>
-</section>
+<aside id="lateral">
+    <h2>Outras Notícias</h2>
+    <h3>Vídeo mais recente</h3>
 
 
-    <!--<section> aqui pode ser um retorno ao inicio/um sub menu ou retorno a paginas de face/whats/e-mail/contato
-        <aside>
-        </aside>
-    </section>-->
-</main>
-<footer>
-    <!--<p class="end">jaison la</p>-->
+[AQUI ENTRA UM VÍDEO]
+
+    <h2>Novidades no Glass</h2>
+    <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+
+    <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+</aside>
+
+<footer id="rodape">
+<p> &copy;Copyright 2019 - by J'Alievi dev &trade;<br/>
+<a href="https://whats.link/jaison" target="_blank">WhatsApp</a> | <a href="https://www.linkedin.com/in/jaison-luiz-alievi-999b06191/" target="_blank"> LinkedIn</a></p>
 </footer>
 </div>
 </body>

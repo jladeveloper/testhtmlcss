@@ -1,102 +1,198 @@
 @charset "UTF-8";
-
+/*adicionando fonts do google*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+/*global*/
 body{
-    background:linear-gradient(black, white, grey);
-}
-
-h1, h2{
-    text-align: center;
+    font-family: Arial sans-serif;
+    background-color: whitesmoke; /*corpo de body whitesmoke*/
 }
 p{
-    font-family: Arial serif;
-    font-size: 20px;
-    text-align: justify;
-    text-indent: 50px;
+    text-align: justify; /*alinhamento justificado*/
+    text-indent: 50px; /*=  a tab*/
 }
-div{
-    position: absolute;
-    width:900px;
-    left:200px;
-    background: url("../imagens/fundo-site.jpg");
-    border: solid 2px;
-    padding: 20px;
-    margin: 2px;
-    margin-top: -20px;
-}
-.objetivo{
-    border: solid 2px rgba(0,0,0,.4);
-    padding: 2px;
-    margin-bottom: 5px;
-}
-.porondecomeçar{
-    border: solid 2px rgba(0,0,0,.4);
-    padding: 2px;
-    margin-top: 5px;
-}
-.apresentação{
-    border:solid 5px rgba(0,0,0,.6);
-    margin-bottom: 10px;
-}
-.apresentação figure{
-    position: relative;
-    left:250px;
-}
-.menuprincipal{
-    display:block;
-    text-transform:uppercase;
+a{
+    color:#606060;
     text-decoration: none;
-    position: absolute;
-    width: 230px;
-    left:-240px;
-    top: 0;
 }
-.menuprincipal ul{
-    list-style: none;/*sem decoração de menu*/
-    display:block; /**/
-    border:solid 5px;
-    background-color: darkgrey;
-    position: absolute;
-    width: 70%;
-    right:3%;
-    margin-left: 2px;
-    padding-left: 2px;
-}
-.menuprincipal li{
-    background-color: grey;
-    font-size: 15px;
-    border: solid 2px;
-    padding: 10px;
-    margin: 10px;
-}
-.menuprincipal a{
-    text-decoration: none;
-    color: white;
-}
-/*.menuprincipal:hover a{
-    color: white;
+a:hover{
+    color: green;
     text-decoration: underline;
-    background-color: black;
-    cursor: pointer;*/
 }
-/*.menuprincipal:hover ul{
-    background-color: darkseagreen;
-    font-size: 15px;*/
+div#interface{
+    width: 900px; /*tamanho da div*/
+    background-color: #dddddd; /*background dentro da div*/
+    margin: -20px auto 0 auto; /*cima/direita/baixo/esquerda*/
+    box-shadow: 0 0 10px rgba(0,0,0,.5);/*sombreamento e alpha 0.5*/
+    padding: 25px;/*mesmo esquema do margin, porem se valores forem iguais pode colocar apenas uma vez!*/
 }
-.cabeçalho{
-    border: solid 5px rgba(0,0,0,.4);
-    padding: 2px;
-    margin-bottom: 10px;
-    background-color: darkseagreen;
+header#cabeçalho img#icone{
+    position: absolute; /*posição absoluta ou seja dentro de header cabeçalho*/
+    top: 70px; /*topo*/
+    left: 740px; /*esquerda*/
 }
-.cabeçalho h1 {
-    font-size: 28px;
-    text-align: left;
-    width: 22%;
-    background-color: grey;
-    border: solid black;
+header#cabeçalho{
+    border-bottom: 1px #606060 solid;/*borda de baixo//largura/cor/formato*/
+    height: 150px;/*altura da borda*/
+    background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0 100px;/*para inserir imagens em css usa-se .. quando tenque voltar uma pasta anterior e depois o endereço onde esta o arquivo*/
 }
-
-.cabeçalho a{
-    text-decoration: none;
+header#cabeçalho h1{
+    font-family: 'Titillium Web', sans-serif; /*sans-serif obrigatorio*/
+    font-size: 30pt; /*tamanho fonte*/
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);/*sombreamento e alpha*/
+    color: #606060; /*cor*/
+    padding: 0; /*espaço interno*/
+    margin-bottom: 0; /*espaço externo*/
+}
+header#cabeçalho h2{
+    font-family:'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0;
+    margin-top: 0;
+}
+/*formatação de imagens*/
+figure.legenda-imagem {
+    position: relative; /*relativa dentro da area de figure*/
+    border: 8px solid white; /*borda*/
+    box-shadow:1px 1px 4px black; /*caixa de sombra*/
+    }
+figure.legenda-imagem img {
+    width: 100%; /*tamanho dentro de figure*/
+    height: 40%; /*altura*/
+}
+figure.legenda-imagem figcaption {
+    opacity: 0; /*legenda opacidade 0*/
+    position: absolute; /*posição absoluta em legenda*/
+    top: 0; /*topo 0*/
+    background-color: rgba(0,0,0,.4); /*preto e alpha 0.5*/
     color: white;
+    width:100%; /*tamanho*/
+    height: 100%; /*altura*/
+    padding: 10px; /*area de espaçamento*/
+    box-sizing: border-box;/*box tamanho da borda*/
+    transition: 1s;/*transição*/
+    font-family: 'Titillium Web', sans-serif;
+}
+figure.legenda-imagem:hover figcaption{ /*hover instrução de passar mouse por cima*/
+    opacity: 1; /*no caso a opacity vira 1 ao passar mouse por cima*/
+}
+/*menu*/
+nav#menu{
+    display: block;/*flutuar menu*/
+}
+\nav#menu ul{ /*toda vez que é "id" usa-se #*/
+    list-style: none; /*remove figuras do menu*/
+    text-transform: uppercase; /*transforma em maiusculo*/
+    position: absolute;/*significa toda area do site*/
+    top: -20px;/*topo do site*/
+    left:300px;/*esquerda do site*/
+}
+nav#menu li:hover{
+    background-color: #606060; /*ao passar o mouse em cima muda a cor*/
+}
+nav#menu li{
+    display: inline-block;/*lista horizontal*/
+    background-color: #dddddd; /*fundo letra #dddddd cinza claro*/
+    padding: 10px; /*espaço entre os brocos*/
+    margin: 2px; /*margem fora do padding*/
+    transition: background-color 1s; /*transição no menu*/
+}
+nav#menu h1{
+    display: none; /*display nada*/
+}
+nav#menu a{ /*cor dos links*/
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{ /*hover é modifições ao passar o mouse*/
+    color: white; /*branco ao passar o mouse*/
+    text-decoration:underline; /*colocara sublinhado ao passar o mouse*/
+}
+#corpo{/*section*/
+    border-right:1px solid #606060 ;
+    display:block;
+    width: 520px;
+    float: left;/*flutuar funciona so com display block*/
+    padding-right: 15px;
+}
+#noticia-principal h2{
+    font-size: 13pt;
+    color:#606060;
+    background-color: #dddddd;
+    padding: 5px 0 5px 10px;
+    margin: 10px 0 10px 0;
+}
+#cabeçalho-artigo h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    color:#606060;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#cabeçalho-artigo h2{
+    font-size: 13pt;
+    color:#ffffff;
+    margin:0;
+}
+#cabeçalho-artigo h3{
+    font-size: 12px;
+    color:#606060;
+}
+.direita{
+    text-align: right;
+}
+#tabelaspec{/*table*/
+    border: 1px solid #606060;
+    border-spacing: 0;/*espaço da borda*/
+    margin-left: auto;/*centralização auto*/
+    margin-right: auto;/*centralização auto*/
+}
+#tabelaspec td{
+    border: 1px solid #606060;
+    padding:10px;
+}
+#tabelaspec caption{
+    font-weight: bolder;
+    font-size: 13pt;
+    color: #888888;
+}
+.datatab{
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 10px;
+    color: black;
+
+}
+.ce{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: right;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #606060;
+}
+.cd{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: left;
+    background-color: #cecece;
+}
+#lateral{/*aside*/
+    display:block;
+    width: 300px;
+    float: right;
+}
+#rodape{/*footer*/
+    clear:both;
+    border-top: 1px solid #606060;
+}
+#rodape p {
+    text-align: center;
+}
+#rodape a{
+    text-decoration: none;
+    color: black;
+}
+#rodape a:hover{
+    text-decoration: underline;
+    color: green;
 }
